@@ -1,0 +1,41 @@
+create table primeraTabla(
+	id int auto_increment,
+    nombre varchar(20),
+    estatura float,
+    fecNacimiento date,
+    descripcion text,
+    primary key(id)
+) 
+
+alter table primeraTabla add column 
+
+create table vehiculo(
+	id int auto_increment,
+    patente  varchar (6)  unique,
+    color varchar (20),
+    puertas int,
+    asientos int,
+    tipo int,
+    primary key (id)
+    
+);
+
+alter table vehiculo drop column tipo
+
+select * from vehiculo
+
+alter table vehiculo add column año int
+
+create table vehiculo_a_eliminr(
+	id int auto_increment,
+    patente  varchar (6)  unique,
+    color varchar (20),
+    puertas int,
+    asientos int,
+    tipo int,
+    primary key (id)
+    
+);
+
+drop table vehiculo_a_eliminr
+
